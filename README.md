@@ -76,7 +76,7 @@ terraform apply -auto-approve
 
 terraform destroy -auto-approve
 
-
+```bash
 --
 💸 Costos
 💾 S3 y CloudTrail → centavos
