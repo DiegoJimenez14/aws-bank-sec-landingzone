@@ -38,9 +38,23 @@ Un proyecto demostrativo para prácticas de **DevSecOps** y cumplimiento de **IS
 
 ## 📊 Arquitectura  
 
+```mermaid
+flowchart TB
+    subgraph AWS["AWS Región"]
+        CT[CloudTrail] -->|Logs| S3[(S3 Logs Bucket)]
+        S3 -->|Cifrado| KMS[(KMS Key)]
 
+        CFG[AWS Config] --> CP[Conformance Pack PCI DSS]
+        CP --> SH[Security Hub]
 
-[Arquitectura de seguridad bancaria](docs/architecture.png)  
+        GD[GuardDuty] --> SH
+        MAC[Macie] --> SH
+        INSP[Inspector] --> SH
+    end
+
+    style S3 fill:#fdd,stroke:#333,stroke-width:2px
+    style SH fill:#ffd700,stroke:#333,stroke-width:2px
+
 
 
 
