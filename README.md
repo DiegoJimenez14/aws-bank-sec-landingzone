@@ -7,6 +7,27 @@
 Infraestructura de seguridad bancaria en **AWS** desplegada con **Terraform**.  
 Un proyecto demostrativo para prácticas de **DevSecOps** y cumplimiento de **ISO 27001** y **PCI DSS**.  
 
+AWS Bank Security Landing Zone
+
+Este proyecto demuestra cómo desplegar una arquitectura de seguridad bancaria en AWS mediante Infrastructure as Code con Terraform, alineada con los controles de ISO 27001 y PCI DSS.
+
+La solución integra servicios nativos de AWS como CloudTrail, Config, Security Hub, GuardDuty, Macie e Inspector, permitiendo:
+✅ Auditoría y trazabilidad de eventos (CloudTrail + S3 + KMS)
+✅ Gestión de cumplimiento normativo (AWS Config + Conformance Pack PCI DSS)
+✅ Detección de amenazas en tiempo real (GuardDuty)
+✅ Protección de datos sensibles (Macie)
+✅ Evaluación continua de vulnerabilidades (Inspector)
+✅ Centralización de hallazgos de seguridad (Security Hub)
+
+Con este enfoque, se demuestra cómo la automatización con Terraform puede:
+
+ 🔒 Fortalecer la postura de seguridad en la nube.
+📏 Alinear la operación con estándares regulatorios.
+⚡ Reducir esfuerzo manual y asegurar la consistencia del cumplimiento.
+
+Un proyecto diseñado para mostrar habilidades en DevSecOps, cumplimiento regulatorio y seguridad en la nube, aplicable a entornos críticos como el sector bancario. 
+
+
 
 ---
 
