@@ -63,52 +63,10 @@ terraform apply -auto-approve
 terraform destroy -auto-approve
  
 
+---
 
+## U
 
 ```bash
-
-# Clonar el repo
-
-git clone https://github.com/DiegoJimenez14/aws-bank-sec-landingzone.git
-
-cd aws-bank-sec-landingzone/iac/terraform/envs/dev
-
-
-
-# Inicializar Terraform
-
-terraform init
-
-terraform plan
-
-terraform apply -auto-approve
-
-
-
-# Destruir recursos (para evitar costos)
-
-terraform destroy -auto-approve
-
-
---
-## 💸 Costos
-💾 S3 y CloudTrail → centavos
-📏 Config → cobra por reglas activas
-🛡 Security Hub, GuardDuty, Macie, Inspector → gratis el primer mes
-⚠️ Importante: desactivar tras la demo para evitar cargos.
-
-
---
-## 📂 Estructura del Proyecto  
-
-**Terraform IaC**  
-
-
-
-
-# 📜 Licencia
---
-MIT © Diego Jiménez
-
 
 
