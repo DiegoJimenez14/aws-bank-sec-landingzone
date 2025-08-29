@@ -95,34 +95,34 @@ terraform destroy -auto-approve
 
 ```
 aws-bank-sec-landingzone/
-├─ .github/
-│  └─ workflows/
-│     └─ terraform-validate.yml
-├─ docs/
-│  └─ architecture_compliance.png
-├─ iac/
-│  └─ terraform/
-│     ├─ backend/
-│     │  └─ backend.tf
-│     ├─ envs/
-│     │  └─ dev/
-│     │     ├─ backend.tf
-│     │     └─ main.tf
-│     └─ modules/
-│        ├─ logging/
-│        │  └─ main.tf
-│        ├─ config/
-│        │  └─ main.tf
-│        ├─ securityhub/
-│        │  └─ main.tf
-│        ├─ guardduty/
-│        │  └─ main.tf
-│        ├─ macie/
-│        │  └─ main.tf
-│        └─ inspector/
-│           └─ main.tf
-├─ LICENSE
-└─ README.md
+├─ 📁 .github/
+│  └─ ⚙️ workflows/
+│     └─ 🔄 terraform-validate.yml
+├─ 📁 docs/
+│  └─ 🖼️ architecture_compliance.png
+├─ 📁 iac/
+│  └─ 📁 terraform/
+│     ├─ 📁 backend/
+│     │  └─ ⚙️ backend.tf
+│     ├─ 📁 envs/
+│     │  └─ 📁 dev/
+│     │     ├─ ⚙️ backend.tf
+│     │     └─ ⚙️ main.tf
+│     └─ 📁 modules/
+│        ├─ 📝 logging/
+│        │  └─ ⚙️ main.tf
+│        ├─ 📝 config/
+│        │  └─ ⚙️ main.tf
+│        ├─ 📝 securityhub/
+│        │  └─ ⚙️ main.tf
+│        ├─ 📝 guardduty/
+│        │  └─ ⚙️ main.tf
+│        ├─ 📝 macie/
+│        │  └─ ⚙️ main.tf
+│        └─ 📝 inspector/
+│           └─ ⚙️ main.tf
+├─ 📄 LICENSE
+└─ 📄 README.md
 
 ```
 
