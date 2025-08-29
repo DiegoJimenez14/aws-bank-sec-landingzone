@@ -1,38 +1,10 @@
-\# AWS Bank Security Landing Zone
+\# 🏦 AWS Bank Security Landing Zone  
 
 
 
-Este proyecto despliega una \*\*arquitectura de seguridad bancaria\*\* en AWS usando \*\*Terraform\*\*.  
+Infraestructura de seguridad bancaria en \*\*AWS\*\* desplegada con \*\*Terraform\*\*.  
 
-Sirve como carta de presentación para demostrar habilidades en \*\*DevSecOps\*\*, \*\*ISO 27001\*\* y \*\*PCI DSS\*\*.
-
-
-
----
-
-
-
-\## Arquitectura
-
-
-
-!\[Arquitectura de seguridad bancaria](docs/architecture.png)
-
-
-
-\*\*Descripción del diagrama:\*\*
-
-\- \*\*CloudTrail + S3 + KMS\*\* → Auditoría de eventos con logs cifrados.
-
-\- \*\*AWS Config + Conformance Pack PCI DSS\*\* → Evaluación de cumplimiento normativo.
-
-\- \*\*GuardDuty\*\* → Detección de amenazas en la cuenta.
-
-\- \*\*Macie\*\* → Descubrimiento de datos sensibles en buckets S3.
-
-\- \*\*Inspector\*\* → Evaluación de vulnerabilidades en EC2, Lambda y ECR.
-
-\- \*\*Security Hub\*\* → Centraliza findings de todos los servicios de seguridad.
+Un proyecto demostrativo para prácticas de \*\*DevSecOps\*\* y cumplimiento de \*\*ISO 27001\*\* y \*\*PCI DSS\*\*.  
 
 
 
@@ -40,27 +12,21 @@ Sirve como carta de presentación para demostrar habilidades en \*\*DevSecOps\*\
 
 
 
-\##  Servicios desplegados
+\## ⚡ Stack de Seguridad  
 
 
 
-\- \*\*CloudTrail\*\* → Logs de auditoría centralizados.
+\- ☁️ \*\*CloudTrail + S3 + KMS\*\* → Auditoría centralizada y logs cifrados  
 
-\- \*\*AWS Config\*\* → Configuration Recorder + Delivery Channel.
+\- 📏 \*\*AWS Config + Conformance Pack PCI DSS\*\* → Evaluación de cumplimiento normativo  
 
-\- \*\*Conformance Pack PCI DSS v4.0.1\*\* → Controles alineados a PCI DSS.
+\- 🛡 \*\*Security Hub\*\* → Findings centralizados  
 
-\- \*\*Security Hub\*\* → Findings centralizados con los estándares:
+\- 👁 \*\*GuardDuty\*\* → Detección de amenazas  
 
-&nbsp; - AWS Foundational Security Best Practices v1.0.0
+\- 🔍 \*\*Macie\*\* → Descubrimiento de datos sensibles en S3  
 
-&nbsp; - PCI DSS v4.0.1
-
-\- \*\*GuardDuty\*\* → Detección de amenazas (malicious IPs, anomalías, etc).
-
-\- \*\*Macie\*\* → Escaneo de buckets S3 en busca de datos sensibles.
-
-\- \*\*Inspector\*\* → Vulnerabilidades en EC2, Lambda y ECR.
+\- 🧪 \*\*Inspector\*\* → Evaluación de vulnerabilidades en EC2, Lambda y ECR  
 
 
 
@@ -68,27 +34,11 @@ Sirve como carta de presentación para demostrar habilidades en \*\*DevSecOps\*\
 
 
 
-\## Relación con normas
+\## 📊 Arquitectura  
 
 
 
-\### ISO 27001
-
-\- \*\*A.12: Registro de eventos\*\* → CloudTrail + S3.
-
-\- \*\*A.16: Gestión de incidentes\*\* → Security Hub + GuardDuty + Inspector.
-
-\- \*\*A.18: Cumplimiento normativo\*\* → Config + Conformance Pack.
-
-
-
-\### PCI DSS v4.0
-
-\- \*\*Requisito 3\*\*: Protección de datos sensibles → S3 cifrado, Macie, KMS.
-
-\- \*\*Requisito 10\*\*: Monitorización de logs → CloudTrail.
-
-\- \*\*Requisito 11\*\*: Pruebas de seguridad y monitoreo → Inspector, GuardDuty.
+!\[Arquitectura de seguridad bancaria](docs/architecture.png)  
 
 
 
@@ -96,13 +46,13 @@ Sirve como carta de presentación para demostrar habilidades en \*\*DevSecOps\*\
 
 
 
-\##  Uso
+\## 🚀 Deploy  
 
 
-
-\### Clonar el repo
 
 ```bash
+
+\# Clonar el repo
 
 git clone https://github.com/DiegoJimenez14/aws-bank-sec-landingzone.git
 
@@ -110,33 +60,41 @@ cd aws-bank-sec-landingzone/iac/terraform/envs/dev
 
 
 
-Optimización de costos
+\# Inicializar Terraform
+
+terraform init
+
+terraform plan
+
+terraform apply -auto-approve
 
 
 
-S3 buckets → costo mínimo (centavos).
+\# Destruir recursos (para evitar costos)
+
+terraform destroy -auto-approve
 
 
 
-CloudTrail → primer trail gratis.
+💸 Costos
 
 
 
-Config → cobra por reglas activas (se despliega solo 1 conformance pack).
+💾 S3 y CloudTrail → centavos
 
 
 
-Security Hub, GuardDuty, Macie, Inspector → gratis primeros 30 días.
+📏 Config → cobra por reglas activas
 
 
 
-IMPORTANTE
+🛡 Security Hub, GuardDuty, Macie, Inspector → gratis el primer mes
 
-⚠️ Recuerda deshabilitarlos o destruir recursos si no se usan después de la demo.
-
-
+⚠️ Importante: desactivar tras la demo para evitar cargos.
 
 
+
+📂 Proyecto
 
 
 
@@ -156,45 +114,25 @@ aws-bank-sec-landingzone/
 
 │     │  └─ dev/
 
-│     │     ├─ backend.tf
-
-│     │     └─ main.tf
-
 │     └─ modules/
 
 │        ├─ logging/
 
-│        │  └─ main.tf
-
 │        ├─ config/
-
-│        │  └─ main.tf
 
 │        ├─ securityhub/
 
-│        │  └─ main.tf
-
 │        ├─ guardduty/
-
-│        │  └─ main.tf
 
 │        ├─ macie/
 
-│        │  └─ main.tf
-
 │        └─ inspector/
 
-│           └─ main.tf
 
 
+📜 Licencia
 
-Licencia
+MIT © Diego Jiménez
 
 
-
-Este proyecto es educativo y demostrativo.
-
-Puedes usarlo, modificarlo y adaptarlo libremente bajo la licencia MIT.
-
-No se recomienda su uso directo en entornos de producción.
 
