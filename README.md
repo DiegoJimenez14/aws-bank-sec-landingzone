@@ -1,4 +1,12 @@
-\# 🏦 AWS Bank Security Landing Zone  
+# 🏦 AWS Bank Security Landing Zone  
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Terraform](https://img.shields.io/badge/IaC-Terraform-blue.svg)](https://www.terraform.io/)
+[![AWS](https://img.shields.io/badge/Cloud-AWS-orange.svg)](https://aws.amazon.com/)
+
+Infraestructura de seguridad bancaria en **AWS** desplegada con **Terraform**.  
+Un proyecto demostrativo para prácticas de **DevSecOps** y cumplimiento de **ISO 27001** y **PCI DSS**.  
+
 
 
 
