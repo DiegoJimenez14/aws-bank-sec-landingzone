@@ -76,9 +76,9 @@ terraform apply -auto-approve
 
 terraform destroy -auto-approve
 
-```bash
+
 --
-💸 Costos
+## 💸 Costos
 💾 S3 y CloudTrail → centavos
 📏 Config → cobra por reglas activas
 🛡 Security Hub, GuardDuty, Macie, Inspector → gratis el primer mes
@@ -118,7 +118,7 @@ aws-bank-sec-landingzone/
 
 │        └─ inspector/
 
---
+
 
 # 📜 Licencia
 --
