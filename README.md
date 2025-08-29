@@ -76,6 +76,31 @@ terraform destroy -auto-approve
 ⚠️ **Importante:** desactivar tras la demo para evitar cargos.  
 
 ---
+## 📂 Estructura del Proyecto  
+
+**Terraform IaC**  
+
+```
+📁 aws-bank-sec-landingzone  
+ ├─ 📄 README.md  
+ ├─ 📂 docs/  
+ │   └─ 🖼️ architecture.png  
+ ├─ 📂 iac/  
+ │   └─ 📂 terraform/  
+ │       ├─ 📂 envs/  
+ │       │   └─ 📂 dev/  
+ │       │       ├─ ⚙️ backend.tf  
+ │       │       └─ ⚙️ main.tf  
+ │       └─ 📂 modules/  
+ │           ├─ 📝 logging/  
+ │           ├─ 📝 config/  
+ │           ├─ 📝 securityhub/  
+ │           ├─ 📝 guardduty/  
+ │           ├─ 📝 macie/  
+ │           └─ 📝 inspector/  
+```
+
+---
 
  
 
