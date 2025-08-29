@@ -8,14 +8,6 @@ Infraestructura de seguridad bancaria en **AWS** desplegada con **Terraform**.
 Un proyecto demostrativo para prácticas de **DevSecOps** y cumplimiento de **ISO 27001** y **PCI DSS**.  
 
 
-
-
-Infraestructura de seguridad bancaria en **AWS** desplegada con **Terraform**.  
-
-Un proyecto demostrativo para prácticas de **DevSecOps** y cumplimiento de **ISO 27001** y **PCI DSS**.  
-
-
-
 ---
 
 
