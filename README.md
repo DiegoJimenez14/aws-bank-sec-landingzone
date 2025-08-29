@@ -46,7 +46,7 @@ Un proyecto demostrativo para prácticas de \*\*DevSecOps\*\* y cumplimiento de 
 
 
 
-!\[Arquitectura de seguridad bancaria](docs/architecture.png)  
+[Arquitectura de seguridad bancaria](docs/architecture.png)  
 
 
 
