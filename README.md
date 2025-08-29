@@ -96,9 +96,7 @@ terraform destroy -auto-approve
 
 
 
-📂 Proyecto
-
-
+## 📂 Proyecto
 
 aws-bank-sec-landingzone/
 
@@ -132,7 +130,7 @@ aws-bank-sec-landingzone/
 
 
 
-📜 Licencia
+# 📜 Licencia
 
 MIT © Diego Jiménez
 
