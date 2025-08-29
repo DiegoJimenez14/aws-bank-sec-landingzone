@@ -86,23 +86,10 @@ terraform destroy -auto-approve
 
 
 --
-## 📂 Proyecto
+## 📂 Estructura del Proyecto  
 
-aws-bank-sec-landingzone/
-├─ README.md
-├─ docs/
-│  └─ architecture.png
-├─ iac/
-│  └─ terraform/
-│     ├─ envs/
-│     │  └─ dev/
-│     └─ modules/
-│        ├─ logging/
-│        ├─ config/
-│        ├─ securityhub/
-│        ├─ guardduty/
-│        ├─ macie/
-│        └─ inspector/
+**Terraform IaC**  
+
 
 
 
