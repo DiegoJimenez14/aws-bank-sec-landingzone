@@ -10,31 +10,9 @@ Un proyecto demostrativo para prácticas de **DevSecOps** y cumplimiento de **IS
 
 
 
-Infraestructura de seguridad bancaria en \*\*AWS\*\* desplegada con \*\*Terraform\*\*.  
+Infraestructura de seguridad bancaria en **AWS** desplegada con **Terraform**.  
 
-Un proyecto demostrativo para prácticas de \*\*DevSecOps\*\* y cumplimiento de \*\*ISO 27001\*\* y \*\*PCI DSS\*\*.  
-
-
-
----
-
-
-
-\## ⚡ Stack de Seguridad  
-
-
-
-\- ☁️ \*\*CloudTrail + S3 + KMS\*\* → Auditoría centralizada y logs cifrados  
-
-\- 📏 \*\*AWS Config + Conformance Pack PCI DSS\*\* → Evaluación de cumplimiento normativo  
-
-\- 🛡 \*\*Security Hub\*\* → Findings centralizados  
-
-\- 👁 \*\*GuardDuty\*\* → Detección de amenazas  
-
-\- 🔍 \*\*Macie\*\* → Descubrimiento de datos sensibles en S3  
-
-\- 🧪 \*\*Inspector\*\* → Evaluación de vulnerabilidades en EC2, Lambda y ECR  
+Un proyecto demostrativo para prácticas de **DevSecOps** y cumplimiento de **ISO 27001** y **PCI DSS**.  
 
 
 
@@ -42,7 +20,23 @@ Un proyecto demostrativo para prácticas de \*\*DevSecOps\*\* y cumplimiento de 
 
 
 
-\## 📊 Arquitectura  
+## ⚡ Stack de Seguridad  
+
+
+- ☁️ **CloudTrail + S3 + KMS** → Auditoría centralizada y logs cifrados  
+- 📏 **AWS Config + Conformance Pack PCI DSS** → Evaluación de cumplimiento normativo  
+- 🛡 **Security Hub** → Findings centralizados  
+- 👁 **GuardDuty** → Detección de amenazas  
+- 🔍 **Macie** → Descubrimiento de datos sensibles en S3  
+- 🧪 **Inspector** → Evaluación de vulnerabilidades en EC2, Lambda y ECR  
+
+
+
+---
+
+
+
+## 📊 Arquitectura  
 
 
 
@@ -54,13 +48,13 @@ Un proyecto demostrativo para prácticas de \*\*DevSecOps\*\* y cumplimiento de 
 
 
 
-\## 🚀 Deploy  
+## 🚀 Deploy  
 
 
 
 ```bash
 
-\# Clonar el repo
+# Clonar el repo
 
 git clone https://github.com/DiegoJimenez14/aws-bank-sec-landingzone.git
 
@@ -68,7 +62,7 @@ cd aws-bank-sec-landingzone/iac/terraform/envs/dev
 
 
 
-\# Inicializar Terraform
+# Inicializar Terraform
 
 terraform init
 
@@ -78,7 +72,7 @@ terraform apply -auto-approve
 
 
 
-\# Destruir recursos (para evitar costos)
+# Destruir recursos (para evitar costos)
 
 terraform destroy -auto-approve
 
