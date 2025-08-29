@@ -61,6 +61,7 @@ terraform apply -auto-approve
 
 # Destruir recursos (para evitar costos)
 terraform destroy -auto-approve
+
  
 
 
